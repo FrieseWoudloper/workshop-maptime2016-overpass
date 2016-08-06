@@ -10,5 +10,21 @@
 
 ![overpass api logo](images/logo-overpass-api.png)
 
+## Wat je vooraf moeten weten over het OpenStreetMap datamodel
+- OpenStreetMap kent drie soorten objecten: nodes, ways and relations.
+- Een node is een punt (coördinaten).
+- Een way is een lijst met nodes (zonder coördinaten). Een way kan een lijn of vlak voorstellen.
+- Een relation is een lijst met nodes, ways of relations en wordt gebruikt om een onderlinge samenhang te modelleren. 
+- Aan een node, way of relation zijn tags gekoppeld. 
+
+
+	
+Mapping The OpenStreetMap data model
+The OpenStreetMap data model
+
+In OpenStreetMap, each feature is described as one or more geometries (think for instance of a river’s shape) with attached attribute data (think of the river’s name). Geometries are described with three different elements: nodes, ways and relations. Attributes are described as tags that can be part of a node, a way or a relation.
+	
+	
+
 [Volgende](2-filteren.md)
 
