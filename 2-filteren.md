@@ -18,7 +18,7 @@ Bij het opstellen van een query moet je met het volgende rekening houden:
 * Een filter op basis van locatie definieer je tussen ronde haken.
 * Een bounding box definieer je als volgt: `(min lat, min lon, max lat, max lon)`
 
-Oefening: Maak een query voor het opvragen van alle nodes in Groningen die getagt zijn als [pinautomaat](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Datm).
+Oefening: Maak een query voor het opvragen van alle nodes in de stad Groningen die getagt zijn als [pinautomaat](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Datm).
 
 ## Filteren op locatie met behulp van `{{bbox}}`
 Als je in Overpass Turbo al bent ingezoomd op het gebied waarvan je de brievenbussen wilt opvragen, kun je volstaan met onderstaande code:
@@ -32,9 +32,20 @@ Let op: `{{bbox}}` is een [Turbo Overpass macro](http://wiki.openstreetmap.org/w
 
 
 ## Filteren op locatie met behulp van `area`
+Als je op zoek bent naar brievenbussen in een stad of gemeente, krijg je met een bouding box vaak meer gegevens terug dan je nodig hebt. Eigenlijk kun je beter filteren op stads- of gemeentegrens. Dat kan met een `area`-filter.
 
 ```
 area["name"="Groningen"];
 node["amenity"="post_box"](area);
 out;
 ```
+
+Als je bovenstaande code uitvoert en uitzoomt, zie je dat niet alleen de brievenbussen in de stad Groningen, maar in de hele provincie Groningen zijn opgevraagd. Hoe zit dat?
+Voer voor het antwoord onderstaande code uit en switch in Overpass Turbo naar het tabblad Gegevens.
+
+```
+area["name"="Groningen"];
+out;
+```
+
+Je ziet nu dat het `area`-filter vier resultaten oplevert: [een vakantiehuisje op Ameland](http://www.openstreetmap.org/way/267920141#map=16/53.4567/5.7923), de provincie Groningen, de gemeente Groningen en de stad Groningen.
