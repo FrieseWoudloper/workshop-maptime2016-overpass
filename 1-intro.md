@@ -3,7 +3,8 @@
 - Een node is een punt.
 - Een way is een lijst met nodes. Een way kan een lijn of vlak voorstellen.
 - Een relation is een geordende lijst van nodes, ways of relations. Een relation wordt gebruikt om een logische of geografische relatie aan te geven, bijvoorbeeld een bestuurlijke grens, buslijn of wandelroute.
-- Aan een node, way of relation zijn tags gekoppeld. Een tag bestaat uit een sleutel (key) en een waarde (value), bijvoorbeeld `id = 1234567890` of `amenity = post_box`.
+- Aan een node, way of relation zijn tags gekoppeld. Met een tag voeg je betekenis toe. Een tag bestaat uit een sleutel (key) en een waarde (value), bijvoorbeeld `id = 1234567890` of `amenity = post_box`.
+- Welke tags er al zijn en hoe je ze het beste gebruikt, kun je opzoeken in de [OpenStreetMap Wiki](http://wiki.openstreetmap.org/wiki/Main_Page) of op [Taginfo](http://taginfo.openstreetmap.org/). 
 
 ## Wat is Overpass API?
 * Overpass API is een interface voor het bevragen van de OpenStreetMap database.
