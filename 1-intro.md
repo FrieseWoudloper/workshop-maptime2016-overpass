@@ -1,9 +1,9 @@
 ## Wat je vooraf moeten weten over OpenStreetMap
 - OpenStreetMap kent drie soorten objecten: nodes, ways and relations.
-- Een node is een punt.
-- Een way is een lijst met nodes. Een way kan een lijn of vlak voorstellen.
-- Een relation is een geordende lijst van nodes, ways of relations. Een relation wordt gebruikt om een logische of geografische relatie aan te geven, bijvoorbeeld een bestuurlijke grens, buslijn of wandelroute.
-- Aan een node, way of relation zijn tags gekoppeld. Met een tag voeg je betekenis toe. Een tag bestaat uit een sleutel (key) en een waarde (value), bijvoorbeeld `id = 1234567890` of `amenity = post_box`.
+- Een [node](http://wiki.openstreetmap.org/wiki/Node) is een punt. Een node heeft een id, latitude en longitude.
+- Een [way](http://wiki.openstreetmap.org/wiki/Way) is een geordende lijst van nodes. Een way kan een lijn of vlak voorstellen.
+- Een [relation](http://wiki.openstreetmap.org/wiki/Relation) is een geordende lijst van nodes, ways of relations. Een relation wordt gebruikt om een logische of geografische relatie aan te geven, bijvoorbeeld een bestuurlijke grens, buslijn of wandelroute.
+- Aan een node, way of relation zijn tags gekoppeld. Met een [tag](http://wiki.openstreetmap.org/wiki/Tags) voeg je betekenis toe. Een tag bestaat uit een sleutel (key) en een waarde (value), bijvoorbeeld `amenity = post_box`.
 - Welke tags er al zijn en hoe je ze het beste gebruikt, kun je opzoeken in de [OpenStreetMap Wiki](http://wiki.openstreetmap.org/wiki/Main_Page) of op [Taginfo](http://taginfo.openstreetmap.org/). 
 
 ## Wat is Overpass API?
