@@ -41,11 +41,12 @@ out;
 ```
 
 Als je bovenstaande code uitvoert en uitzoomt, zie je dat niet alleen de brievenbussen in de stad Groningen, maar in de hele provincie Groningen zijn opgevraagd. Hoe zit dat?
-Voer voor het antwoord onderstaande code uit en switch in Overpass Turbo naar het tabblad Gegevens.
+Voer onderstaande code uit en switch in Overpass Turbo naar het tabblad Gegevens.
 
 ```
 area["name"="Groningen"];
 out;
 ```
 
-Je ziet nu dat het `area`-filter vier resultaten oplevert: [een vakantiehuisje op Ameland](http://www.openstreetmap.org/way/267920141#map=16/53.4567/5.7923), de provincie Groningen, de gemeente Groningen en de stad Groningen.
+Je ziet nu dat het `area`-filter een combinatie van vier gebieden oplevert: [een vakantiehuisje op Ameland](http://www.openstreetmap.org/way/267920141#map=16/53.4567/5.7923), de provincie&nbsp;Groningen, de gemeente&nbsp;Groningen en de stad&nbsp;Groningen.
+Je filtert dus op een veel groter gebied dan de stad Groningen!
