@@ -20,7 +20,7 @@ Bij het opstellen van een query moet je met het volgende rekening houden:
 
 Oefening: Maak een query voor het opvragen van alle nodes in Groningen die getagt zijn als [pinautomaat](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Datm).
 
-## Filteren op locatie met behulp van een macro
+## Filteren op locatie met behulp van `{{bbox}}`
 Als je in Overpass Turbo al bent ingezoomd op het gebied waarvan je de brievenbussen wilt opvragen, kun je volstaan met onderstaande code:
 
 ```
@@ -28,13 +28,13 @@ node["amenity"="post_box"]({{bbox}});
 out;
 ```
 
-Let op: `{{bbox}}` is een Turbo Overpass macro en werkt niet als je via een andere front end of rechtstreeks de Overpass API bevraagt.
+Let op: `{{bbox}}` is een [Turbo Overpass macro](http://wiki.openstreetmap.org/wiki/Overpass_turbo/Extended_Overpass_Turbo_Queries) en werkt niet als je via een andere front end of rechtstreeks de Overpass API bevraagt.
 
 
 ## Filteren op locatie met behulp van `area`
 
 ```
-area["name"="Groningen"]
+area["name"="Groningen"];
 node["amenity"="post_box"](area);
 out;
 ```
