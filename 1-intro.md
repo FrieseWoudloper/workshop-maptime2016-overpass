@@ -1,5 +1,11 @@
-## Wat is Overpass API?
+## Wat je vooraf moeten weten over OpenStreetMap
+- OpenStreetMap kent drie soorten objecten: nodes, ways and relations.
+- Een node is een punt.
+- Een way is een lijst met nodes. Een way kan een lijn of vlak voorstellen.
+- Een relation is een geordende lijst van nodes, ways of relations. Een relation wordt gebruikt om een logische of geografische relatie aan te geven, bijvoorbeeld een bestuurlijke grens, buslijn of wandelroute.
+- Aan een node, way of relation zijn tags gekoppeld. Een tag bestaat uit een sleutel (key) en waarde (value), bijvoorbeeld `amenity = post_box`.
 
+## Wat is Overpass API?
 * Overpass API is een interface voor het bevragen van de OpenStreetMap database.
 * Je hoeft geen software te installeren of OSM-bestanden te downloaden. Je stelt je vraag en krijgt het antwoord via het web.
 * Het is alleen mogelijk om gegevens in OpenStreetMap te lezen, niet om ze te wijzigen.
@@ -9,22 +15,6 @@
 * In de workshop gebruiken we de Overpass turbo IDE: http://overpass-turbo.eu/
 
 ![overpass api logo](images/logo-overpass-api.png)
-
-## Wat je vooraf moeten weten over het OpenStreetMap datamodel
-- OpenStreetMap kent drie soorten objecten: nodes, ways and relations.
-- Een node is een punt (coördinaten).
-- Een way is een lijst met nodes (zonder coördinaten). Een way kan een lijn of vlak voorstellen.
-- Een relation is een lijst met nodes, ways of relations en wordt gebruikt om een onderlinge samenhang te modelleren. 
-- Aan een node, way of relation zijn tags gekoppeld. 
-
-
-	
-Mapping The OpenStreetMap data model
-The OpenStreetMap data model
-
-In OpenStreetMap, each feature is described as one or more geometries (think for instance of a river’s shape) with attached attribute data (think of the river’s name). Geometries are described with three different elements: nodes, ways and relations. Attributes are described as tags that can be part of a node, a way or a relation.
-	
-	
 
 [Volgende](2-filteren.md)
 
