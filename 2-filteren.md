@@ -49,4 +49,13 @@ out;
 ```
 
 Je ziet nu dat het `area`-filter een combinatie van vier gebieden oplevert: [een vakantiehuisje op Ameland](http://www.openstreetmap.org/way/267920141#map=16/53.4567/5.7923), de provincie&nbsp;Groningen, de gemeente&nbsp;Groningen en de stad&nbsp;Groningen.
-Je filtert dus op een veel groter gebied dan de stad Groningen!
+De query filtert dus op een veel groter gebied dan de stad Groningen!
+Met behulp van [admin_level](http://wiki.openstreetmap.org/wiki/Template:Admin_level_11) kun je aangeven dat je wilt filteren op de _stad_ Groningen.
+
+```
+area["name"="Groningen"]["admin_level"="10"];
+node["amenity"="post_box"](area);
+out;
+```
+
+Oefening: Vraag alle brievenbussen op in de provincie Utrecht.
