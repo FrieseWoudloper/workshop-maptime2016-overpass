@@ -1,10 +1,6 @@
-## Overpass Turbo
-Overpass API is een service voor het bevragen van de OpenStreetMap database. [Overpass Turbo](http://overpass-turbo.eu/) is een interface voor deze service. Overpass Turbo helpt je bij het samenstellen van je query en visualiseert de query-resultaten. 
-
-
-## Hello World!
+## Filteren op gebied met behulp van een bounding box filter
 We beginnen met een simpel voorbeeld: het opvragen van alle nodes die getagt zijn als brievenbus in de stad Groningen en directe omgeving.
-Voer onderstaande code uit in Overpass Turbo en zoom in op Groningen.
+Open [Overpass Turbo](http://overpass-turbo.eu/), voer onderstaande code uit en zoom in op Groningen.
 
 ```
 node["amenity"="post_box"](53.18, 6.52, 53.25, 6.62);
@@ -20,7 +16,7 @@ Bij het opstellen van een query moet je met het volgende rekening houden:
 
 Oefening: Maak een query voor het opvragen van alle nodes in de stad Groningen die getagt zijn als [pinautomaat](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Datm).
 
-## Filteren op locatie met behulp van `{{bbox}}`
+## Filteren op gebied met behulp van `{{bbox}}`
 Als je in Overpass Turbo al bent ingezoomd op het gebied waarvan je de brievenbussen wilt opvragen, kun je volstaan met onderstaande code:
 
 ```
@@ -31,7 +27,7 @@ out;
 Let op: `{{bbox}}` is een [Turbo Overpass macro](http://wiki.openstreetmap.org/wiki/Overpass_turbo/Extended_Overpass_Turbo_Queries) en werkt niet als je via een andere front end of rechtstreeks de Overpass API bevraagt.
 
 
-## Filteren op locatie met behulp van `area`
+## Filteren op gebied met behulp van `area`
 Als je op zoek bent naar brievenbussen in een stad of gemeente, krijg je met een bouding box vaak meer gegevens terug dan je nodig hebt. Eigenlijk kun je beter filteren op stads- of gemeentegrens. Dat kan met een `area`-filter.
 
 ```
@@ -53,6 +49,7 @@ Je ziet nu dat het `area`-filter een combinatie van vier gebieden oplevert:
 * de _provincie_ Groningen,
 * de _gemeente_ Groningen en 
 * de _stad_ Groningen.
+
 De query filtert dus op een veel groter gebied dan de stad Groningen!
 Met behulp van [admin_level](http://wiki.openstreetmap.org/wiki/Template:Admin_level_11) kun je aangeven dat je alleen geïnteresseerd bent in de stad Groningen.
 
@@ -63,3 +60,5 @@ out;
 ```
 
 Oefening: Vraag alle brievenbussen op in de provincie Utrecht.
+
+Volgende 

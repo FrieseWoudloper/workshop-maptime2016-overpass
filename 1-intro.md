@@ -17,5 +17,5 @@
 
 ![overpass api logo](images/logo-overpass-api.png)
 
-[Volgende](2-filteren.md)
+[Volgende](2-filteren-op-gebied.md)
 
