@@ -26,10 +26,6 @@ out;
 
 Oefening: Vraag alle pinautomaten op in de stad Groningen die getagt zijn als [```"name"="ING"```](http://wiki.openstreetmap.org/wiki/Key:name).
 
-## 
-The second variant selects all elements that have a tag with a certain key and an arbitrary value. It contains nothing between the key literal and the closing bracket:
-
-
 ## Vereniging
 Hoe pak je het aan als je een lijst wilt van alle café en [restaurants](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Drestaurant]) in een gebied? Dan vraag je om een vereniging (of _union_) van twee verzamelingen. Dat doe je als volgt:
 
