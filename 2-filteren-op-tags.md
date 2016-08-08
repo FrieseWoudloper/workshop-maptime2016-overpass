@@ -44,12 +44,9 @@ out;
 
 Oefening: Vraag alle pinautomaten op in de stad Groningen die getagt zijn als ```"name"="ING"``` en/of [```"operator"="ING"```](http://wiki.openstreetmap.org/wiki/Key:operator).
 
-
-  node["name"];
-
 ## Reguliere expressies
 Je kunt in tag-filters ook gebruik maken van [reguliere expressies](https://nl.wikipedia.org/wiki/Reguliere_expressie). In onderstaand voorbeeld worden nodes geselecteerd met de afkorting ING in de ```operator```-tag.
-Voer onderstaande query uit en check in het tabblad _Gegevens_ dat nu ook de nodes worden geselecteerd met ```"operator"="ING Bank"```.
+Voer onderstaande code uit en check in het tabblad _Gegevens_ dat nu ook de nodes worden geselecteerd met ```"operator"="ING Bank"```.
 
 ```
 area["name"="Groningen"]["admin_level"="10"];
@@ -81,7 +78,7 @@ node["name"~"^ING$",i];
 out;
 ```
 
-Je kunt ook nodes opvragen met een ```name```-tag die leeg is. Gelukkig zijn die er niet zoveel. Vandaar dat we in deze query niet filteren op gebied, maar de hele OpenStreetMap-database doorzoeken.
+Je kunt ook nodes opvragen met een ```name```-tag die leeg is. Gelukkig zijn die er niet zoveel. Vandaar dat we in deze zoekopdracht niet filteren op gebied, maar de hele OpenStreetMap-database doorzoeken.
 
 ```
 node["amenity"="cafe"]["name"~"^$"];
