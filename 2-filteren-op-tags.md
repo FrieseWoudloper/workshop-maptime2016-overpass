@@ -16,7 +16,19 @@ node["amenity"="cafe"]["wheelchair"="yes"](area);
 out;
 ```
 
+Als je alleen maar wilt weten òf er een ```wheelchair```-tag is, ongeacht de bijbehorende waarde, dan voer je onderstaande zoekopdracht uit. Je krijgt dan dus ook de café's waarvan expliciet is aangegeven dat ze níet toegankelijk zijn voor rolstoelgebruikers.
+
+```
+area["name"="Groningen"]["admin_level"="10"];
+node["amenity"="cafe"]["wheelchair"](area);
+out;
+```
+
 Oefening: Vraag alle pinautomaten op in de stad Groningen die getagt zijn als [```"name"="ING"```](http://wiki.openstreetmap.org/wiki/Key:name).
+
+## 
+The second variant selects all elements that have a tag with a certain key and an arbitrary value. It contains nothing between the key literal and the closing bracket:
+
 
 ## Vereniging
 Hoe pak je het aan als je een lijst wilt van alle café en [restaurants](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Drestaurant]) in een gebied? Dan vraag je om een vereniging (of _union_) van twee verzamelingen. Dat doe je als volgt:
@@ -31,6 +43,9 @@ out;
 ```
 
 Oefening: Vraag alle pinautomaten op in de stad Groningen die getagt zijn als ```"name"="ING"``` en/of [```"operator"="ING"```](http://wiki.openstreetmap.org/wiki/Key:operator).
+
+
+  node["name"];
 
 ## Reguliere expressies
 Je kunt in tag-filters ook gebruik maken van [reguliere expressies](https://nl.wikipedia.org/wiki/Reguliere_expressie). In onderstaand voorbeeld worden nodes geselecteerd met de afkorting ING in de ```operator```-tag.
@@ -66,5 +81,13 @@ node["name"~"^ING$",i];
 out;
 ```
 
+Je kunt ook nodes opvragen met een ```name```-tag die leeg is. Gelukkig zijn die er niet zoveel. Vandaar dat we in deze query niet filteren op gebied, maar de hele OpenStreetMap-database doorzoeken.
+
+```
+node["amenity"="cafe"]["name"~"^$"];
+out;
+```
+
 Meer informatie over het gebruik van reguliere expressie in combinatie met Overpass API vind je [hier](http://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL#Value_matches_regular_expression_.28.7E.2C_.21.7E.29).
 
+[Volgende]()
