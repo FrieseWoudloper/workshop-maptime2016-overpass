@@ -14,6 +14,8 @@ node["amenity"="cafe"]["wheelchair"="yes"]({{bbox}});
 out;
 ```
 
+Oefening: Vraag alle pinautomaten op die getagt zijn als [```"name"="ING"```](http://wiki.openstreetmap.org/wiki/Key:name).
+
 ## Vereniging
 Hoe pak je het aan als je een lijst wilt van alle café en (restaurants)[[http://wiki.openstreetmap.org/wiki/Tag:amenity%3Drestaurant]] in een gebied? Dan vraag je om een vereniging (of _union_) van twee verzamelingen. Dat doe je als volgt:
 
@@ -25,21 +27,5 @@ Hoe pak je het aan als je een lijst wilt van alle café en (restaurants)[[http:/
 out;
 ```
 
-In bovenstaande voorbeelden zijn we er vanuit gegaan dat café's en restaurants in OpenStreetMap zijn opgenomen als nodes, maar dat hoeft niet. Het kunnen ook ways of relations zijn! 
-Ter illustratie het voorbeeld van natuurijsbanen in Nederland. De meeste natuurijsbanen zijn nodes.
+Oefening: Vraag alle pinautomaten op die getagt zijn als ```"name"="ING"``` en/of [```"operator"="ING"```](http://wiki.openstreetmap.org/wiki/Key:operator).
 
-```
-area["name"="Nederland"]["admin_level"="2"];
-node["leisure"="ice_rink"]["seasonal"="yes"];
-out;
-```
-
-Maar er zijn ook ways getagt als natuurijsbanen.
-
-```
-area["name"="Nederland"]["admin_level"="2"];
-way["leisure"="ice_rink"]["seasonal"="yes"];
-out;
-```
-
-Volgende 
