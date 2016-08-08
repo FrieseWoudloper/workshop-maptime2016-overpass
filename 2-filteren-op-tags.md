@@ -81,6 +81,9 @@ node["amenity"="cafe"]["name"~"^$"];
 out;
 ```
 
+Oefening: selecteer alle nodes in de stad Groningen die getagt zijn als [winkel](http://wiki.openstreetmap.org/wiki/Key:shop) met ```"bakker"``` in de ```name```-tag, ongeacht of het in kleine of hoofdletters geschreven is.
+Let op: niet alle nodes in het zoekresultaat zijn getagt als ```"shop"= "bakery"```!
+
 Meer informatie over het gebruik van reguliere expressie in combinatie met Overpass API vind je [hier](http://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL#Value_matches_regular_expression_.28.7E.2C_.21.7E.29).
 
 [Volgende]()
