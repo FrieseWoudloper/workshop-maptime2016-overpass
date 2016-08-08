@@ -37,7 +37,7 @@ out;
 ```
 
 Als je bovenstaande code uitvoert en uitzoomt, zie je dat niet alleen de brievenbussen in de stad Groningen, maar in de hele provincie Groningen zijn opgevraagd. Hoe zit dat?
-Voer onderstaande code uit en switch in Overpass Turbo naar het tabblad Gegevens.
+Voer onderstaande code uit en switch in Overpass Turbo naar het tabblad _Gegevens_.
 
 ```
 area["name"="Groningen"];
@@ -61,4 +61,4 @@ out;
 
 Oefening: Vraag alle brievenbussen op in de provincie Utrecht.
 
-Volgende 
+[Volgende](2-filteren-op-tags.md)
