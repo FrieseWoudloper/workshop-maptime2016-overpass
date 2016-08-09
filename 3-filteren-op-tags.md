@@ -47,8 +47,9 @@ node["amenity"="cafe"]["name"~"^$"];
 out;
 ```
 
-Oefening: Zoek naar Italiaanse [restaurants](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Drestaurant) in de stad Groningen met behulp van een reguliere expressie en de [```cuisine```](http://wiki.openstreetmap.org/wiki/Key:cuisine) tag.
+Meer informatie over het gebruik van reguliere expressies in combinatie met Overpass API vind je [hier](http://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL#Value_matches_regular_expression_.28.7E.2C_.21.7E.29).
 
-Meer informatie over het gebruik van reguliere expressie in combinatie met Overpass API vind je [hier](http://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL#Value_matches_regular_expression_.28.7E.2C_.21.7E.29).
+Oefening: Zoek naar Italiaanse [restaurants](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Drestaurant) in Groningen met behulp van een reguliere expressie en de [```cuisine```](http://wiki.openstreetmap.org/wiki/Key:cuisine) tag.
+
 
 [Volgende](4-verzamelingen.md)
