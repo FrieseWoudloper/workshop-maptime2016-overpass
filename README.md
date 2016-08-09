@@ -5,8 +5,8 @@ Voor het samenstellen van de workshop heb ik dankbaar gebruik gemaakt van materi
 
 ## Inhoud
 [1. Introductie](1-intro.md)
-  2.1 Wat je vooraf moet weten over OpenStreetMap
-  2.2 Wat is Overpass API?
+&nbsp;&nbsp;1.1 Wat je vooraf moet weten over OpenStreetMap
+&nbsp;&nbsp;1.2 Wat is Overpass API?
 
 [2. Filteren op gebied](2-filteren-op-gebied.md)
   1. Bounding box filter
