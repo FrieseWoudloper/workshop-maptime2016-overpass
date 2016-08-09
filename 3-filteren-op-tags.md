@@ -16,6 +16,8 @@ node["amenity"="cafe"]["wheelchair"="yes"](area);
 out;
 ```
 
+Oefening: Vraag alle pinautomaten op in de stad Groningen die getagt zijn als [```"name"="ING"```](http://wiki.openstreetmap.org/wiki/Key:name).
+
 Als je alleen maar wilt weten òf er een ```wheelchair```-tag is, ongeacht de bijbehorende waarde, dan voer je onderstaande zoekopdracht uit. Je krijgt dan dus ook de café's waarvan expliciet is aangegeven dat ze níet toegankelijk zijn voor rolstoelgebruikers.
 
 ```
@@ -23,8 +25,6 @@ area["name"="Groningen"]["admin_level"="10"];
 node["amenity"="cafe"]["wheelchair"](area);
 out;
 ```
-
-Oefening: Vraag alle pinautomaten op in de stad Groningen die getagt zijn als [```"name"="ING"```](http://wiki.openstreetmap.org/wiki/Key:name).
 
 ## Vereniging
 Hoe pak je het aan als je een lijst wilt van alle café en [restaurants](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Drestaurant]) in een gebied? Dan vraag je om een vereniging (of _union_) van twee verzamelingen. Dat doe je als volgt:
@@ -82,7 +82,6 @@ out;
 ```
 
 Oefening: selecteer alle nodes in de stad Groningen die getagt zijn als [winkel](http://wiki.openstreetmap.org/wiki/Key:shop) met ```"bakker"``` in de ```name```-tag, ongeacht of het in kleine of hoofdletters geschreven is.
-
 Let op: niet alle nodes in het zoekresultaat zijn getagt als ```"shop"= "bakery"```!
 
 Meer informatie over het gebruik van reguliere expressie in combinatie met Overpass API vind je [hier](http://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL#Value_matches_regular_expression_.28.7E.2C_.21.7E.29).
