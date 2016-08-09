@@ -40,7 +40,7 @@ node["amenity"="cafe"]["name"!~"."](area);
 out;
 ```
 
-Je kunt ook nodes opvragen met een ```name```-tag die leeg is. Gelukkig zijn die er niet zoveel. Vandaar dat we in deze zoekopdracht niet filteren op gebied, maar de hele OpenStreetMap-database doorzoeken.
+Met een reguliere expressie kun je ook controleren of er lege tags zijn. Onderstaande zoekopdracht retourneert alle nodes waarvan de ```name```-tag die leeg is. Gelukkig zijn dat er niet zoveel. Vandaar dat we in dit geval niet filteren op gebied, maar de hele OpenStreetMap-database doorzoeken.
 
 ```
 node["amenity"="cafe"]["name"~"^$"];
