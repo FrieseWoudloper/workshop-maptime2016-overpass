@@ -20,7 +20,7 @@ Je kunt je zoekopdracht ook hoofdletterongevoelig maken. Onderstaande zoekopdrac
 
 ```
 area["name"="Groningen"]["admin_level"="10"];
-node["name"~"Coffee",i];
+nodenode["amenity"="cafe"]["name"~"Coffee",i];
 out;
 ```
 
