@@ -1,4 +1,4 @@
-## 1. Wat je vooraf moeten weten over OpenStreetMap
+## 1.1 Wat je vooraf moeten weten over OpenStreetMap
 - OpenStreetMap kent drie soorten objecten: nodes, ways and relations.
 - Een [node](http://wiki.openstreetmap.org/wiki/Node) is een punt. Een node heeft een id, latitude en longitude.
 - Een [way](http://wiki.openstreetmap.org/wiki/Way) is een geordende lijst van nodes. Een way kan een lijn of vlak voorstellen.
@@ -6,7 +6,7 @@
 - Aan een node, way of relation zijn tags gekoppeld. Met een [tag](http://wiki.openstreetmap.org/wiki/Tags) voeg je betekenis toe. Een tag bestaat uit een sleutel en bijbehorende waarde, bijvoorbeeld `amenity = post_box`.
 - Welke tags er al zijn en hoe je ze het beste gebruikt, kun je opzoeken in de [OpenStreetMap Wiki](http://wiki.openstreetmap.org/wiki/Main_Page) of op [Taginfo](http://taginfo.openstreetmap.org/). 
 
-## 2. Wat is Overpass API?
+## 1.2 Wat is Overpass API?
 * Overpass API is een interface voor het bevragen van de OpenStreetMap database.
 * Je hoeft geen software te installeren of OSM-bestanden te downloaden. Je stelt je vraag en krijgt het antwoord via het web.
 * Het is alleen mogelijk om gegevens in OpenStreetMap te lezen, niet om ze te wijzigen.

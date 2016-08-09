@@ -1,4 +1,4 @@
-## 1. Bounding box filter
+## 2.1 Bounding box filter
 We beginnen met een simpel voorbeeld: het opvragen van alle nodes die getagt zijn als brievenbus in de stad Groningen en directe omgeving.
 Open [Overpass Turbo](http://overpass-turbo.eu/), voer onderstaande code uit en zoom in op Groningen.
 
@@ -16,7 +16,7 @@ Bij het opstellen van een query moet je met het volgende rekening houden:
 
 Oefening: Maak een query voor het opvragen van alle nodes in de stad Groningen die getagt zijn als [pinautomaat](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Datm).
 
-## 2. `{{bbox}}` macro
+## 2.2 `{{bbox}}` macro
 Als je in Overpass Turbo al bent ingezoomd op het gebied waarvan je de brievenbussen wilt opvragen, kun je volstaan met onderstaande code:
 
 ```
@@ -27,7 +27,7 @@ out;
 Let op: `{{bbox}}` is een [Turbo Overpass macro](http://wiki.openstreetmap.org/wiki/Overpass_turbo/Extended_Overpass_Turbo_Queries) en werkt niet als je via een andere front end of rechtstreeks de Overpass API bevraagt.
 
 
-## 3. `area` filter
+## 2.3 `area` filter
 Als je op zoek bent naar brievenbussen in een stad of gemeente, krijg je met een bouding box vaak meer gegevens terug dan je nodig hebt. Eigenlijk kun je beter filteren op stads- of gemeentegrens. Dat kan met een `area` filter. [`area`](http://wiki.openstreetmap.org/wiki/Overpass_API/Areas) is een extra gegevenstype naast node, way en relation, dat alleen bestaat binnen de Overpass API. Overpass API kan op verzoek een `area` berekenen, waarna het gebruikt kan worden in een zoekopdracht. 
 
 ```

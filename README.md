@@ -15,6 +15,9 @@ Voor het samenstellen van de workshop heb ik dankbaar gebruik gemaakt van materi
 
 [3. Filteren op tags](3-filteren-op-tags.md)  
 &nbsp;&nbsp;3.1 Tag filter  
-&nbsp;&nbsp;3.2 Doorsnede  
-&nbsp;&nbsp;3.3 Vereniging  
 &nbsp;&nbsp;3.4 Reguliere expressies
+
+[4. Verzamelingen](4-verzamelingen.md)  
+&nbsp;&nbsp;4.1 Sets  
+&nbsp;&nbsp;4.2 Doorsnede  
+&nbsp;&nbsp;4.3 Vereniging  
