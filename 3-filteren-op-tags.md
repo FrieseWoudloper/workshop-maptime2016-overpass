@@ -52,5 +52,3 @@ Oefening: selecteer alle nodes in de stad Groningen die getagt zijn als [winkel]
 Meer informatie over het gebruik van reguliere expressie in combinatie met Overpass API vind je [hier](http://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL#Value_matches_regular_expression_.28.7E.2C_.21.7E.29).
 
 [Volgende](4-verzamelingen.md)
-
-test
