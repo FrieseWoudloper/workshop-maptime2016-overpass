@@ -1,7 +1,7 @@
 ## Workshop Overpass API
 Deze repository bevat materiaal voor de Overpass API workshop tijdens [Maptime Summercamp 2016](http://www.meetup.com/GeoForts-sideshow-diverse-activiteiten-op-het-fort/events/232395505/) op het [Geofort]().
 De inhoud van de repository is beschikbaar voor hergebruik onder een [Creative Commons Naamsvermelding-GelijkDelen](https://creativecommons.org/licenses/by-sa/3.0/nl/) licentie.
-Voor het samenstellen van de workshop heb ik dankbaar gebruik gemaakt van materiaal van Alex Morega, [Roland Olbricht](http://wiki.openstreetmap.org/wiki/User:Roland.olbricht) en [Michael Reichert](http://wiki.openstreetmap.org/wiki/User:Nakaner). Hun slides, videos en ander materiaal vind je op [OpenStreetMap wiki-pagina van Overpass API](http://wiki.openstreetmap.org/wiki/Overpass_API#Talks.2C_Presentations.2C_Workshops). 
+Voor het samenstellen van de workshop heb ik dankbaar gebruik gemaakt van materiaal van Alex&nbsp;Morega, [Roland&nbsp;Olbricht](http://wiki.openstreetmap.org/wiki/User:Roland.olbricht) en [Michael&nbsp;Reichert](http://wiki.openstreetmap.org/wiki/User:Nakaner). Hun slides, videos en ander materiaal vind je op [OpenStreetMap wiki-pagina van Overpass API](http://wiki.openstreetmap.org/wiki/Overpass_API#Talks.2C_Presentations.2C_Workshops). 
 
 ## Inhoud
 [1 Introductie](1-intro.md)
