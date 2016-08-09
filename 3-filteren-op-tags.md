@@ -16,7 +16,7 @@ node["amenity"="cafe"]["name"~"Coffee"](area);
 out;
 ```
 
-Je kunt je zoekopdracht ook hoofdletterongevoelig maken. Onderstaande zoekopdracht retourneert -in tegenstelling tot de vorige- ook het café met de naam 'coffeecompany' (zonder hoofdletter).
+Het is eenvoudig om je zoekopdracht hoofdletterongevoelig te maken. Onderstaande zoekopdracht retourneert — in tegenstelling tot de vorige — ook het café met de naam 'coffeecompany' (zonder hoofdletter).
 
 ```
 area["name"="Groningen"]["admin_level"="10"];
