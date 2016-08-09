@@ -5,16 +5,25 @@ Voor het samenstellen van de workshop heb ik dankbaar gebruik gemaakt van materi
 
 ## Inhoud
 [1 Introductie](1-intro.md)
+
 1.1 Wat je vooraf moet weten over OpenStreetMap
+
 1.2 Wat is Overpass API?
 
 [2 Filteren op gebied](2-filteren-op-gebied.md)
+
 2.1 Bounding box filter
+
 2.2 `{{bbox}}` macro
+
 2.3 `area` filter
 
 [3 Filteren op tags](3-filteren-op-tags.md)
+
 3.1 Tag filter
+
 3.2 Doorsnede
+
 3.3 Vereniging
+
 3.4 Reguliere expressies
