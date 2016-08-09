@@ -24,7 +24,7 @@ node["amenity"="cafe"]["name"~"Coffee",i];
 out;
 ```
 
-Met behulp van een reguliere expressie kun je in één regel filteren op café, bar of restaurant: 
+Met behulp van een reguliere expressie kun je in één regel filteren op café, bar of restaurant. 
 
 ```
 area["name"="Groningen"]["admin_level"="10"];
@@ -32,7 +32,7 @@ node["amenity"~"cafe|bar|restaurant"](area);
 out;
 ```
 
-Reguliere expressies zijn erg krachtig. Ter illustratie het volgende voorbeeld waarin []restaurants](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Drestaurant) met in de naam een getal van twee cijfers worden opgevraagd.
+Reguliere expressies zijn erg krachtig. Ter illustratie het volgende voorbeeld waarin [restaurants](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Drestaurant) met in de naam een getal van twee cijfers worden opgevraagd.
 
 ```
 area["name"="Groningen"]["admin_level"="10"];
@@ -40,7 +40,7 @@ node["amenity"="restaurant"]["name"~"[0-9]{2}"](area);
 out;
 ```
 
-Je kunt gemakkelijk controleren of er café's zijn zonder ```name```-tag:
+Je kunt gemakkelijk controleren of er café's zijn zonder ```name```-tag.
 
 ```
 area["name"="Groningen"]["admin_level"="10"];
