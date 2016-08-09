@@ -32,7 +32,15 @@ node["amenity"~"cafe|bar|restaurant"](area);
 out;
 ```
 
-Je kunt ook controleren of er café's zijn zonder ```name```-tag:
+Reguliere expressies zijn erg krachtig. Ter illustratie het volgende voorbeeld waarin []restaurants](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Drestaurant) met in de naam een getal van twee cijfers worden opgevraagd.
+
+```
+area["name"="Groningen"]["admin_level"="10"];
+node["amenity"="restaurant"]["name"~"[0-9]{2}"](area);
+out;
+```
+
+Je kunt gemakkelijk controleren of er café's zijn zonder ```name```-tag:
 
 ```
 area["name"="Groningen"]["admin_level"="10"];
@@ -49,7 +57,7 @@ out;
 
 Meer informatie over het gebruik van reguliere expressies in combinatie met Overpass API vind je [hier](http://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL#Value_matches_regular_expression_.28.7E.2C_.21.7E.29).
 
-Oefening: Zoek naar Italiaanse [restaurants](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Drestaurant) in Groningen met behulp van een reguliere expressie en de [```cuisine```](http://wiki.openstreetmap.org/wiki/Key:cuisine) tag.
+Oefening: Zoek naar Italiaanse restaurants in Groningen met behulp van een reguliere expressie en de [```cuisine```](http://wiki.openstreetmap.org/wiki/Key:cuisine) tag.
 
 
 [Volgende](4-verzamelingen.md)
