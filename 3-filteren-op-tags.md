@@ -7,6 +7,13 @@ node["amenity"="cafe"](area);
 out;
 ```
 
+Je kunt ook filteren op het voorkomen van een tag, ongeacht de waarde. Het tag-filter bevat dan alleen de sleutel: ```["sleutel"]```. De volgende zoekopdracht selecteert bijvoorbeeld alle soorten [winkels](http://wiki.openstreetmap.org/wiki/Key:shop) in Groningen.
+```
+area["name"="Groningen"]["admin_level"="10"];
+node["shop"](area);
+out;
+```
+
 ## 3.2 Reguliere expressies
 Je kunt in tag filters ook gebruik maken van [reguliere expressies](https://nl.wikipedia.org/wiki/Reguliere_expressie). In onderstaand voorbeeld worden café's opgevraagd met in de naam het woord 'Coffee'.
 
@@ -40,7 +47,7 @@ node["amenity"="restaurant"]["name"~"[0-9]{2}"](area);
 out;
 ```
 
-Je kunt gemakkelijk controleren of er café's zijn zonder ```name```-tag.
+Je kunt snel controleren of er café's zijn zonder ```name```-tag.
 
 ```
 area["name"="Groningen"]["admin_level"="10"];

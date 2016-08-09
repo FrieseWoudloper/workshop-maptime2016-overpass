@@ -51,7 +51,7 @@ Je ziet nu dat het `area`-filter een combinatie van vier gebieden oplevert:
 * de _stad_ Groningen.
 
 De query filtert dus op een veel groter gebied dan de stad Groningen!
-Met behulp van [admin_level](http://wiki.openstreetmap.org/wiki/Template:Admin_level_11) kun je aangeven dat je alleen geïnteresseerd bent in de stad Groningen.
+Met behulp van [```admin_level```](http://wiki.openstreetmap.org/wiki/Template:Admin_level_11) kun je aangeven dat je alleen geïnteresseerd bent in de stad Groningen.
 
 ```
 area["name"="Groningen"]["admin_level"="10"];
