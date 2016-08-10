@@ -73,7 +73,7 @@ area["name"="Groningen"]["admin_level"="10"] -> .g;
 out center;
 ```
 
-De laatste regel ```out center;``` is aangepast, zodat je voor alle café's één punt terug krijgt. Als een café in OpenStreetMap is ingetekend als een vlak, geeft de zoekopdracht alleen het middenpunt retour.
+De laatste regel ```out center;``` is aangepast, zodat je voor alle café's één punt terug krijgt. De optie ```center``` zorgt er namelijk voor dat de zoekopdracht voor ways en relations het middelpunt van de bounding box teruggeeft.
 
 Als je inzoomt op het centrum van Groningen zie je dat café 'Goudkantoor' aan het Waagplein als enige café geen node is, maar een way.
 
