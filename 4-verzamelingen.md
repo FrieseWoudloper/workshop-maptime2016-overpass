@@ -67,4 +67,4 @@ Oefening:
 Natuurijsbanen zijn getagt als [```"leisure"="ice_rink"```](http://wiki.openstreetmap.org/wiki/Tag:leisure%3Dice_rink) en ```"seasonal"="yes"```. Ze zijn ingekend als node, way of relation. Maak een zoekopdracht voor alle natuurijsbanen in Nederland (```"name"="Nederland"``` en ```"admin_level"="2"```). Zorg ervoor dat je voor iedere ijsbaan één punt terug krijgt.  
 In Overpass Turbo worden nodes weergegeven als gele cirkels met een blauwe omtrek. Ways zijn rode cirkels met een blauwe omtrek en relations rode cirkels met een rode omtrek. Als je goed kijkt, zie je dat in het zoekresultaat alle drie vormen voorkomen.
 
-[Volgende]()
+[Volgende](5-recursie.md)
