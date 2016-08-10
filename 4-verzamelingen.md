@@ -33,7 +33,7 @@ area["name"="Groningen"]["admin_level"="10"] -> .g;
 out;
 ```
 
-Hieronder nog een voorbeeld van een zoekopdracht waarin de café's in de stad Groningen en Leeuwarden worden opgevraagd.
+Hieronder een voorbeeld van een zoekopdracht waarin de café's in de stad Groningen en Leeuwarden worden opgevraagd.
 
 ```
 area["name"="Groningen"]["admin_level"="10"] -> .g;
@@ -44,6 +44,20 @@ area["name"="Leeuwarden"]["admin_level"="10"] -> .l;
 );
 out;
 ```
+
+Tenslotte nog een voorbeeld waarin gebruik wordt gemaakt van de standaard set voor het opvragen van café's en restaurants in Groningen met een [```opening_hours```](http://wiki.openstreetmap.org/wiki/Key:opening_hours) tag.
+
+```
+area["name"="Groningen"]["admin_level"="10"] -> .g;
+(
+	node["amenity"="cafe"](area.g);
+	node["amenity"="restaurant"](area.g);
+);
+node._["opening_hours"];
+out;
+```
+
+Als je de zesde regel vervangt door ```node[opening_hours];``` krijg je waarschijnlijk een time-out. Je bevraagt dan namelijk de hele OpenStreetMap database in plaats van de deelverzameling die in de standaard set is opgeslagen.
 
 ## 4.3 Eén zoekopdracht voor nodes, ways en relations
 Tot nu toe hebben we alleen nodes opgevraagd, maar er zijn meer soorten objecten. Een café kan bijvoorbeeld ook zijn in OpenStreetMap zijn opgenomen als way of relation.  
