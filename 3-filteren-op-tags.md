@@ -15,10 +15,10 @@ node["amenity"="cafe"]["wheelchair"="yes"](area);
 out;		
 ```
 
-Je kunt ook filteren op het voorkomen van een tag, ongeacht de waarde. Het tag filter bevat dan alleen de sleutel: ```["sleutel"]```. De volgende zoekopdracht selecteert bijvoorbeeld alle soorten [winkels](http://wiki.openstreetmap.org/wiki/Key:shop) in Groningen.
+Je kunt ook filteren op het voorkomen van een tag, ongeacht de waarde. Het tag filter bevat dan alleen de sleutel: ```["sleutel"]```. De volgende zoekopdracht selecteert bijvoorbeeld alle café's met een ```wheelchair``` tag, ook de café's waarvan expliciet is aangegeven dat ze níet geschikt zijn voor rolstoelgebruikers.
 ```
-area["name"="Groningen"]["admin_level"="10"];
-node["shop"](area);
+area["name"="Groningen"]["admin_level"="10"];		
+node["amenity"="cafe"]["wheelchair"](area);		
 out;
 ```
 
