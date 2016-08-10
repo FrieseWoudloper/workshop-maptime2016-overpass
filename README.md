@@ -21,3 +21,8 @@ Voor het samenstellen van de workshop heb ik dankbaar gebruik gemaakt van materi
 &nbsp;&nbsp;4.1 Sets  
 &nbsp;&nbsp;4.2 Vereniging  
 &nbsp;&nbsp;4.3 Eén zoekopdracht voor nodes, ways en relations
+
+[5. Recursie](5-recursie.md)  
+&nbsp;&nbsp;5.1 Recurse down 
+&nbsp;&nbsp;5.2 Recurse up  
+

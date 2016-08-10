@@ -15,8 +15,10 @@ Hoe pak je het aan als je een lijst wilt van alle café plus [restaurants](http:
 
 ```
 ( 
-	area["name"="Groningen"]["admin_level"="10"]; node["amenity"="cafe"](area);
-  	area["name"="Groningen"]["admin_level"="10"]; node["amenity"="restaurant"](area);
+&nbsp;&nbsp;area["name"="Groningen"]["admin_level"="10"]; 
+&nbsp;&nbsp;node["amenity"="cafe"](area);
+&nbsp;&nbsp;area["name"="Groningen"]["admin_level"="10"]; 
+&nbsp;&nbsp;node["amenity"="restaurant"](area);
 );
 out;
 ```
@@ -27,8 +29,8 @@ Om het overzichtelijk te houden, kun je in dit geval beter een set definiëren.
 ```
 area["name"="Groningen"]["admin_level"="10"] -> .g;
 ( 
-	node["amenity"="cafe"](area.g);
-  	node["amenity"="restaurant"](area.g);
+&nbsp;&nbsp;node["amenity"="cafe"](area.g);
+&nbsp;&nbsp;node["amenity"="restaurant"](area.g);
 );
 out;
 ```
@@ -39,8 +41,8 @@ Hieronder een voorbeeld van een zoekopdracht waarin de café's in de stad Gronin
 area["name"="Groningen"]["admin_level"="10"] -> .g;
 area["name"="Leeuwarden"]["admin_level"="10"] -> .l;
 ( 
-	node["amenity"="cafe"](area.g);
-	node["amenity"="cafe"](area.l);
+&nbsp;&nbsp;node["amenity"="cafe"](area.g);
+&nbsp;&nbsp;node["amenity"="cafe"](area.l);
 );
 out;
 ```
@@ -50,8 +52,8 @@ Tenslotte nog een voorbeeld waarin gebruik wordt gemaakt van de standaard set vo
 ```
 area["name"="Groningen"]["admin_level"="10"] -> .g;
 (
-	node["amenity"="cafe"](area.g);
-	node["amenity"="restaurant"](area.g);
+&nbsp;&nbsp;node["amenity"="cafe"](area.g);
+&nbsp;&nbsp;node["amenity"="restaurant"](area.g);
 );
 node._["opening_hours"];
 out;
@@ -66,9 +68,9 @@ Om zeker te weten dat je alle café's in Groningen opvraagt, moet je dus ook way
 ```
 area["name"="Groningen"]["admin_level"="10"] -> .g;
 ( 
-	node["amenity"="cafe"](area.g);
-	way["amenity"="cafe"](area.g);
-	relation["relation"="cafe"](area.g);
+&nbsp;&nbsp;node["amenity"="cafe"](area.g);
+&nbsp;&nbsp;way["amenity"="cafe"](area.g);
+&nbsp;&nbsp;relation["relation"="cafe"](area.g);
 );
 out center;
 ```
