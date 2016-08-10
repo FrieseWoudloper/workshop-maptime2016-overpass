@@ -1,5 +1,5 @@
 ## 4.1 Sets
-In Overpass QL werk je met sets. Als je niet expliciet een set specificeert, wordt alles gelezen van en weggeschreven naar de standaard set ```_```.
+In Overpass QL werk je met _sets_. Als je niet expliciet een set specificeert, wordt alles gelezen van en weggeschreven naar de standaard set ```_```.
 Als je gegevens wilt wegschrijven naar een andere set, gebruik je de ```->```` syntax. 
 
 ```
@@ -44,6 +44,24 @@ area["name"="Leeuwarden"]["admin_level"="10"] -> .l;
 );
 out;
 ```
+
+## 4.3 Eén zoekopdracht voor nodes, ways én relations
+Tot nu toe hebben we alleen nodes opgevraagd, maar er zijn meer soorten objecten. Een café kan bijvoorbeeld ook zijn in OpenStreetMap zijn opgenomen als way of relation.  
+Om zeker te weten dat je alle café's in Groningen opvraagt, moet je dus ook ways en relations meenemen.
+
+```
+area["name"="Groningen"]["admin_level"="10"] -> .g;
+( 
+	node["amenity"="cafe"](area.g);
+	way["amenity"="cafe"](area.g);
+	relation["relation"="cafe"](area.g);
+);
+out center;
+```
+
+De laatste regel ```out center;``` is aangepast, zodat je voor alle café's één puntlokatie terug krijgt. Als een café is ingetekend als een vlak, geeft de zoekopdracht alleen het middenpunt retour.
+
+Als je inzoomt op het centrum van Groningen zie je dat café 'Goudkantoor' aan het Waagplein als enige café geen node is, maar een way.
 
 Oefening: .
 
