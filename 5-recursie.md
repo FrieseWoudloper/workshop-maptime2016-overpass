@@ -10,3 +10,7 @@ out;
 Je krijgt de volgende melding:
 ```This query returned no nodes. In OSM, only nodes contain coordinates. For example, a way cannot be displayed without its nodes.```  
 Kies voor de optie ```Gegevens weergeven```.
+
+Het resultaat van de zoekopdracht wordt nu getoond in het tabblad _Gegevens_. In onderstaand screenshot zie je dat een way een lijst is met verwijzingen naar nodes. Een way bevat géén geometrie.
+
+![way is lijst met nodes](images/way-is-lijst-met-nodes.png)
