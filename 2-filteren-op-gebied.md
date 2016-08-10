@@ -15,7 +15,7 @@ Bij het opstellen van een query moet je met het volgende rekening houden:
 * Een bounding box definieer je als volgt: `(min lat, min lon, max lat, max lon)`
 
 Oefening:  
-Maak een query voor het opvragen van alle nodes in de stad Groningen die getagt zijn als [pinautomaat](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Datm).
+Maak een zoekopdracht voor het opvragen van alle nodes in de stad Groningen die getagt zijn als [pinautomaat](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Datm).
 
 ## 2.2 `{{bbox}}` macro
 Als je in Overpass Turbo al bent ingezoomd op het gebied waarvan je de brievenbussen wilt opvragen, kun je volstaan met onderstaande code:

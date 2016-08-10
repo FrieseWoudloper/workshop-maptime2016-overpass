@@ -19,5 +19,5 @@ Voor het samenstellen van de workshop heb ik dankbaar gebruik gemaakt van materi
 
 [4. Verzamelingen](4-verzamelingen.md)  
 &nbsp;&nbsp;4.1 Sets  
-&nbsp;&nbsp;4.2 Vereniging 
+&nbsp;&nbsp;4.2 Vereniging  
 &nbsp;&nbsp;4.3 Eén zoekopdracht voor nodes, ways en relations
