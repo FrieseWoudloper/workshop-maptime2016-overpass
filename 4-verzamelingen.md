@@ -15,10 +15,10 @@ Hoe pak je het aan als je een lijst wilt van alle café plus [restaurants](http:
 
 ```
 ( 
-&nbsp;&nbsp;area["name"="Groningen"]["admin_level"="10"]; 
-&nbsp;&nbsp;node["amenity"="cafe"](area);
-&nbsp;&nbsp;area["name"="Groningen"]["admin_level"="10"]; 
-&nbsp;&nbsp;node["amenity"="restaurant"](area);
+&nbsp;&nbsp;area["name"="Groningen"]["admin_level"="10"];  
+&nbsp;&nbsp;node["amenity"="cafe"](area);  
+&nbsp;&nbsp;area["name"="Groningen"]["admin_level"="10"];  
+&nbsp;&nbsp;node["amenity"="restaurant"](area);  
 );
 out;
 ```
