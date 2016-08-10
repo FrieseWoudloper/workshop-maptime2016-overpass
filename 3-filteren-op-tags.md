@@ -64,7 +64,7 @@ out;
 
 Meer informatie over het gebruik van reguliere expressies in combinatie met Overpass API vind je [hier](http://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL#Value_matches_regular_expression_.28.7E.2C_.21.7E.29).
 
-Oefening: Zoek naar Italiaanse restaurants in Groningen met behulp van een reguliere expressie en de [```cuisine```](http://wiki.openstreetmap.org/wiki/Key:cuisine) tag.
-
+Oefening:  
+Zoek naar Italiaanse restaurants in Groningen met behulp van een reguliere expressie en de [```cuisine```](http://wiki.openstreetmap.org/wiki/Key:cuisine) tag.
 
 [Volgende](4-verzamelingen.md)

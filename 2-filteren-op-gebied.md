@@ -3,7 +3,7 @@ We beginnen met een simpel voorbeeld: het opvragen van alle nodes die getagt zij
 Open [Overpass Turbo](http://overpass-turbo.eu/), voer onderstaande code uit en zoom in op Groningen.
 
 ```
-node["amenity"="post_box"](53.18, 6.52, 53.25, 6.62);
+node["amenity"="post_box"];
 out;
 ```
 
@@ -14,7 +14,8 @@ Bij het opstellen van een query moet je met het volgende rekening houden:
 * Een filter op basis van locatie definieer je tussen ronde haken.
 * Een bounding box definieer je als volgt: `(min lat, min lon, max lat, max lon)`
 
-Oefening: Maak een query voor het opvragen van alle nodes in de stad Groningen die getagt zijn als [pinautomaat](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Datm).
+Oefening:  
+Maak een query voor het opvragen van alle nodes in de stad Groningen die getagt zijn als [pinautomaat](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Datm).
 
 ## 2.2 `{{bbox}}` macro
 Als je in Overpass Turbo al bent ingezoomd op het gebied waarvan je de brievenbussen wilt opvragen, kun je volstaan met onderstaande code:
@@ -59,6 +60,7 @@ node["amenity"="post_box"](area);
 out;
 ```
 
-Oefening: Vraag alle brievenbussen op in de provincie Utrecht.
+Oefening:  
+Vraag alle brievenbussen op in de provincie Utrecht.
 
 [Volgende](3-filteren-op-tags.md)

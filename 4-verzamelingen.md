@@ -63,6 +63,7 @@ De laatste regel ```out center;``` is aangepast, zodat je voor alle café's éé
 
 Als je inzoomt op het centrum van Groningen zie je dat café 'Goudkantoor' aan het Waagplein als enige café geen node is, maar een way.
 
-Oefening: Natuurijsbanen zijn getagt als [```"leisure"="ice_rink"```](http://wiki.openstreetmap.org/wiki/Tag:leisure%3Dice_rink) en ```"seasonal"="yes"```. Natuurijsbanen in OpenStreetMap zijn ingekend als node, way of relation. Maak een zoekopdracht voor het opvragen van alle natuurijsbanen in Nederland (```"name"="Nederland"``` en ```"admin_level"="2"```). Zorg ervoor dat je voor iedere ijsbaan één punt terug krijgt.
+Oefening:  
+Natuurijsbanen zijn getagt als [```"leisure"="ice_rink"```](http://wiki.openstreetmap.org/wiki/Tag:leisure%3Dice_rink) en ```"seasonal"="yes"```. Natuurijsbanen in OpenStreetMap zijn ingekend als node, way of relation. Maak een zoekopdracht voor het opvragen van alle natuurijsbanen in Nederland (```"name"="Nederland"``` en ```"admin_level"="2"```). Zorg ervoor dat je voor iedere ijsbaan één punt terug krijgt.
 
 [Volgende]()
