@@ -75,14 +75,15 @@ area["name"="Groningen"]["admin_level"="10"] -> .g;
 out center;
 ```
 
-De laatste regel ```out center;``` is aangepast, zodat je voor alle café's één punt terug krijgt. De optie ```center``` zorgt er namelijk voor dat de zoekopdracht voor ways en relations het middelpunt van de bounding box teruggeeft.
+Aan de ```out``` regel is de parameter ```center``` toegevoegd, zodat je voor alle café's één punt terug krijgt. De parameter ```center``` zorgt er voor dat de zoekopdracht voor ways en relations het middelpunt van de bounding box teruggeeft.
 
 Als je inzoomt op het centrum van Groningen zie je dat café 'Goudkantoor' aan het Waagplein als enige café geen node is, maar een way.
 
 Oefening:  
 Natuurijsbanen zijn getagt als [```"leisure"="ice_rink"```](http://wiki.openstreetmap.org/wiki/Tag:leisure%3Dice_rink) en ```"seasonal"="yes"```. Ze zijn ingekend als node, way of relation. Maak een zoekopdracht voor alle natuurijsbanen in Nederland (```"name"="Nederland"``` en ```"admin_level"="2"```). Zorg ervoor dat je voor iedere ijsbaan één punt terug krijgt.  
 Bekijk de legenda van Overpass Turbo.
-![legenda](images/legenda.png) 
+![legenda](images/legenda.png =600x)  
+
 IJsbanen ingetekend als nodes worden weergegeven als gele cirkels met een blauwe omtrek. IJsbanen ingetekend als ways (vlakken) als rode cirkels met een blauwe omtrek. IJsbanen ingetekend als relations als rode cirkels met een rode omtrek.  
 
 [Volgende](5-recursie.md)

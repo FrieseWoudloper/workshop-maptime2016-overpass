@@ -26,14 +26,63 @@ out center;
 
 Als je in het voorbeeld toch de vlakken van de parken nodig hebt, moet je gebruik maken van een _recurse down_. Hiervoor bestaat de ```>``` syntax.  Met een recurse down vraag je alle onderliggende nodes op.  
 
+Check voordat je onderstaande code uitvoert de instellingen van Overpass Turbo. Het is namelijk handig wanneer je _Kleine objecten niet weergeven als POI_ hebt aangevinkt.  
+
 ```
 area["name"="Groningen"]["admin_level"="10"];
 (
   way["leisure"="park"](area);
   >;
-) 
+); 
 out;
 ```
 
+De zoekopdracht retourneert alle ways die voldoen aan de filtercriteria plus alle onderliggende nodes. Als je de ronde haken weg laat, krijg je alleen de onderliggende nodes retour.
+```
+area["name"="Groningen"]["admin_level"="10"];
+way["leisure"="park"](area);
+>;
+out;
+```
 
+Op dezelfde manier kun je ook de ways en nodes opvragen van lijnen. In de volgende zoekopdracht worden hoogspanningslijnen opgevraagd die door de stad Groningen lopen.
 
+```
+area["name"="Groningen"]["admin_level"="10"];
+(
+  way[power=line][voltage~"...000"](area);
+  >;
+);
+out;
+```
+
+Recurse down werkt ook voor relations. Relations bevatten net als ways geen coördinaten, alleen verwijzingen. In onderstaand zoekopdracht worden de ways en nodes van de stadsgrens van Groningen opgevraagd.
+
+relation[name="Groningen"]["admin_level"="10"];
+>;
+out;
+
+Nog een voorbeeld waarbij van het [noordelijk deel van het Pieterpad](http://wiki.openstreetmap.org/wiki/WikiProject_Nederland_Wandelroutes#Lange-Afstand-Wandelpaden) de relation en onderliggende ways en nodes worden geretourneerd.
+
+```
+(
+  relation["network"="nwn"]["ref"="LAW 9-1"];
+  >;
+)
+out;
+```
+
+Oefening:  
+Maak een zoekopdracht waarbij alle natuurijsbanen in Nederland als node, way of relation worden opgevraagd en als zodanig worden weergegeven in het tabblad _Kaart_.
+
+## Recurse up
+Overpass QL kent ook de _recurse up_ (```<```). Ter illustratie onderstaande zoekopdracht waarin voor node 621460846 alle ways en relations worden opgevraagd waar de node onderdeel van uitmaakt en alle relations waar de ways in de resultaatset onderdeel van uitmaken.
+Node 621460846 is de bushalte voor de Martinitoren in Groningen.
+
+```
+node(621460846);
+<; 
+out geom;
+```
+
+Aan de ```out``` regel is de parameter ```geom``` toegevoegd. Deze parameter zorgt er voor dat aan elk element in de resultaatset geometrie wordt toegevoegd.
