@@ -11,7 +11,7 @@ out;
 Wanneer je binnen één zoekopdracht meerdere malen aan dezelfde verzameling gegevens wilt refereren, kan het handig zijn om met sets te werken.
 
 ## 4.2 Vereniging
-Hoe pak je het aan als je een lijst wilt van alle café plus [restaurants](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Drestaurant]) in een gebied? Dan vraag je om een vereniging (of _union_) van twee verzamelingen. Dat doe je als volgt:
+Hoe pak je het aan als je een lijst wilt van alle café plus [restaurants](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Drestaurant]) in een gebied? Dan vraag je om een vereniging (of _union_) van twee verzamelingen. Dat doe je met behulp van een [_block_](http://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL#Block_statements)-statement:
 
 ```
 ( 
