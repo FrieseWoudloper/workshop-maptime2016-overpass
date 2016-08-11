@@ -15,10 +15,10 @@ Hoe pak je het aan als je een lijst wilt van alle café plus [restaurants](http:
 
 ```
 ( 
-&nbsp;&nbsp;area["name"="Groningen"]["admin_level"="10"];  
-&nbsp;&nbsp;node["amenity"="cafe"](area);  
-&nbsp;&nbsp;area["name"="Groningen"]["admin_level"="10"];  
-&nbsp;&nbsp;node["amenity"="restaurant"](area);  
+  area["name"="Groningen"]["admin_level"="10"];  
+  node["amenity"="cafe"](area);  
+  area["name"="Groningen"]["admin_level"="10"];  
+  node["amenity"="restaurant"](area);  
 );
 out;
 ```
@@ -29,8 +29,8 @@ Om het overzichtelijk te houden, kun je in dit geval beter een set definiëren.
 ```
 area["name"="Groningen"]["admin_level"="10"] -> .g;
 ( 
-&nbsp;&nbsp;node["amenity"="cafe"](area.g);
-&nbsp;&nbsp;node["amenity"="restaurant"](area.g);
+  node["amenity"="cafe"](area.g);
+  node["amenity"="restaurant"](area.g);
 );
 out;
 ```
@@ -41,8 +41,8 @@ Hieronder een voorbeeld van een zoekopdracht waarin de café's in de stad Gronin
 area["name"="Groningen"]["admin_level"="10"] -> .g;
 area["name"="Leeuwarden"]["admin_level"="10"] -> .l;
 ( 
-&nbsp;&nbsp;node["amenity"="cafe"](area.g);
-&nbsp;&nbsp;node["amenity"="cafe"](area.l);
+  node["amenity"="cafe"](area.g);
+  node["amenity"="cafe"](area.l);
 );
 out;
 ```
@@ -52,8 +52,8 @@ Tenslotte nog een voorbeeld waarin gebruik wordt gemaakt van de standaard set vo
 ```
 area["name"="Groningen"]["admin_level"="10"] -> .g;
 (
-&nbsp;&nbsp;node["amenity"="cafe"](area.g);
-&nbsp;&nbsp;node["amenity"="restaurant"](area.g);
+  node["amenity"="cafe"](area.g);
+  node["amenity"="restaurant"](area.g);
 );
 node._["opening_hours"];
 out;
@@ -68,9 +68,9 @@ Om zeker te weten dat je alle café's in Groningen opvraagt, moet je dus ook way
 ```
 area["name"="Groningen"]["admin_level"="10"] -> .g;
 ( 
-&nbsp;&nbsp;node["amenity"="cafe"](area.g);
-&nbsp;&nbsp;way["amenity"="cafe"](area.g);
-&nbsp;&nbsp;relation["relation"="cafe"](area.g);
+  node["amenity"="cafe"](area.g);
+  way["amenity"="cafe"](area.g);
+  relation["relation"="cafe"](area.g);
 );
 out center;
 ```
@@ -81,6 +81,8 @@ Als je inzoomt op het centrum van Groningen zie je dat café 'Goudkantoor' aan h
 
 Oefening:  
 Natuurijsbanen zijn getagt als [```"leisure"="ice_rink"```](http://wiki.openstreetmap.org/wiki/Tag:leisure%3Dice_rink) en ```"seasonal"="yes"```. Ze zijn ingekend als node, way of relation. Maak een zoekopdracht voor alle natuurijsbanen in Nederland (```"name"="Nederland"``` en ```"admin_level"="2"```). Zorg ervoor dat je voor iedere ijsbaan één punt terug krijgt.  
-In Overpass Turbo worden nodes weergegeven als gele cirkels met een blauwe omtrek. Ways zijn rode cirkels met een blauwe omtrek en relations rode cirkels met een rode omtrek. Als je goed kijkt, zie je dat in het zoekresultaat alle drie vormen voorkomen.
+Bekijk de legenda van Overpass Turbo.
+![legenda](images/legenda.png) 
+IJsbanen ingetekend als nodes worden weergegeven als gele cirkels met een blauwe omtrek. IJsbanen ingetekend als ways (vlakken) als rode cirkels met een blauwe omtrek. IJsbanen ingetekend als relations als rode cirkels met een rode omtrek.  
 
 [Volgende](5-recursie.md)

@@ -29,8 +29,8 @@ Als je in het voorbeeld toch de vlakken van de parken nodig hebt, moet je gebrui
 ```
 area["name"="Groningen"]["admin_level"="10"];
 (
-&nbsp;&nbsp;way["leisure"="park"](area);
-&nbsp;&nbsp;>;
+  way["leisure"="park"](area);
+  >;
 ) 
 out;
 ```
