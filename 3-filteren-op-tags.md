@@ -1,5 +1,5 @@
 ## 3.1 Tag filter
-Een tag filter is als volgt gedefinieerd: ```["sleutel"="waarde"]```. In onderstaand voorbeeld worden alle [café's](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dcafe) in de stad Groningen opgevraagd.
+Een tag filter is als volgt gedefinieerd: ```["sleutel"="waarde"]```. In onderstaand voorbeeld worden alle [cafés](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dcafe) in de stad Groningen opgevraagd.
 
 ```
 area["name"="Groningen"]["admin_level"="10"];
@@ -7,7 +7,7 @@ node["amenity"="cafe"](area);
 out;
 ```
 
-Filteren op twee of meer tags is eenvoudig: je plaatst de tag-filters achter elkaar. Je krijgt als resultaat de elementen die aan alle filtercriteria voldoen. Zo is het bijvoorbeeld eenvoudig om alle café's op te vragen die toegankelijk zijn voor [rolstoelgebruikers](http://wiki.openstreetmap.org/wiki/Key:wheelchair).
+Filteren op twee of meer tags is eenvoudig: je plaatst de tag-filters achter elkaar. Je krijgt als resultaat de elementen die aan alle filtercriteria voldoen. Zo is het bijvoorbeeld eenvoudig om alle cafés op te vragen die toegankelijk zijn voor [rolstoelgebruikers](http://wiki.openstreetmap.org/wiki/Key:wheelchair).
 
 ```		
 area["name"="Groningen"]["admin_level"="10"];		
@@ -15,7 +15,7 @@ node["amenity"="cafe"]["wheelchair"="yes"](area);
 out;		
 ```
 
-Je kunt ook filteren op het voorkomen van een tag, ongeacht de waarde. Het tag filter bevat dan alleen de sleutel: ```["sleutel"]```. De volgende zoekopdracht selecteert bijvoorbeeld alle café's met een ```wheelchair``` tag, ook de café's waarvan expliciet is aangegeven dat ze níet geschikt zijn voor rolstoelgebruikers.
+Je kunt ook filteren op het voorkomen van een tag, ongeacht de waarde. Het tag filter bevat dan alleen de sleutel: ```["sleutel"]```. De volgende zoekopdracht selecteert bijvoorbeeld alle cafés met een ```wheelchair``` tag, ook de cafés waarvan expliciet is aangegeven dat ze níet geschikt zijn voor rolstoelgebruikers.
 ```
 area["name"="Groningen"]["admin_level"="10"];		
 node["amenity"="cafe"]["wheelchair"](area);		
@@ -26,7 +26,7 @@ Oefening:
 Vraag alle ING-pinautomaten op in de stad Groningen ([```"amenity"="atm"```](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Datm) en ```"operator"="ING"```).
 
 ## 3.2 Reguliere expressies
-Je kunt in tag filters ook gebruik maken van [reguliere expressies](https://nl.wikipedia.org/wiki/Reguliere_expressie). In onderstaand voorbeeld worden café's opgevraagd met in de naam het woord 'Coffee'.
+Je kunt in tag filters ook gebruik maken van [reguliere expressies](https://nl.wikipedia.org/wiki/Reguliere_expressie). In onderstaand voorbeeld worden cafés opgevraagd met in de naam het woord 'Coffee'.
 
 ```
 area["name"="Groningen"]["admin_level"="10"];
@@ -58,7 +58,7 @@ node["amenity"="restaurant"]["name"~"[0-9]{2}"](area);
 out;
 ```
 
-Je kunt snel controleren of er café's zijn zonder ```name```-tag.
+Je kunt snel controleren of er cafés zijn zonder ```name```-tag.
 
 ```
 area["name"="Groningen"]["admin_level"="10"];

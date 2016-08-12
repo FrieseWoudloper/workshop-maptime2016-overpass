@@ -1,7 +1,7 @@
 ## Workshop Overpass API
 Deze repository bevat materiaal voor de Overpass API workshop tijdens [Maptime Summercamp 2016](http://www.meetup.com/GeoForts-sideshow-diverse-activiteiten-op-het-fort/events/232395505/) op het [Geofort]().
 De inhoud van de repository is beschikbaar voor hergebruik onder een [Creative Commons Naamsvermelding-GelijkDelen](https://creativecommons.org/licenses/by-sa/3.0/nl/) licentie.
-Voor het samenstellen van de workshop heb ik dankbaar gebruik gemaakt van materiaal van [Alex&nbsp;Morega](https://github.com/mgax), [Roland&nbsp;Olbricht](http://wiki.openstreetmap.org/wiki/User:Roland.olbricht) en [Michael&nbsp;Reichert](http://wiki.openstreetmap.org/wiki/User:Nakaner). Hun slides, videos en ander materiaal vind je op de OpenStreetMap [wiki-pagina](http://wiki.openstreetmap.org/wiki/Overpass_API#Talks.2C_Presentations.2C_Workshops) van Overpass API. 
+Voor het samenstellen van de workshop heb ik dankbaar gebruik gemaakt van het werk van [Alex&nbsp;Morega](https://github.com/mgax), [Roland&nbsp;Olbricht](http://wiki.openstreetmap.org/wiki/User:Roland.olbricht) en [Michael&nbsp;Reichert](http://wiki.openstreetmap.org/wiki/User:Nakaner). Hun slides, videos en ander materiaal vind je op de OpenStreetMap [wiki-pagina](http://wiki.openstreetmap.org/wiki/Overpass_API#Talks.2C_Presentations.2C_Workshops) van Overpass API. 
 
 ## Inhoud
 [1. Introductie](1-intro.md)  
@@ -26,9 +26,9 @@ Voor het samenstellen van de workshop heb ik dankbaar gebruik gemaakt van materi
 &nbsp;&nbsp;5.1 Recurse down  
 &nbsp;&nbsp;5.2 Recurse up  
 
-[7. Bonusmateriaal](7-bonusmateriaal.md)
-&nbsp;&nbsp;7.1 GeoJSON-exportbestand
-&nbsp;&nbsp;7.2 QuickOSM plugin voor QGIS
-&nbsp;&nbsp;7.3 Leaflet
-&nbsp;&nbsp;7.4 Zoeken vanaf de command line
+[7. Bonusmateriaal](7-bonusmateriaal.md)  
+&nbsp;&nbsp;7.1 GeoJSON-exportbestand  
+&nbsp;&nbsp;7.2 QuickOSM plugin voor QGIS  
+&nbsp;&nbsp;7.3 Leaflet  
+&nbsp;&nbsp;7.4 Zoeken vanaf de command line  
 

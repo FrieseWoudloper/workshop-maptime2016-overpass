@@ -11,7 +11,7 @@ out;
 Wanneer je binnen één zoekopdracht meerdere malen aan dezelfde verzameling gegevens wilt refereren, kan het handig zijn om met sets te werken.
 
 ## 4.2 Vereniging
-Hoe pak je het aan als je een lijst wilt van alle café plus [restaurants](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Drestaurant]) in een gebied? Dan vraag je om een vereniging (of _union_) van twee verzamelingen. Dat doe je met behulp van een [_block_](http://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL#Block_statements)-statement:
+Hoe pak je het aan als je een lijst wilt van alle cafés plus [restaurants](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Drestaurant]) in een gebied? Dan vraag je om een vereniging (of _union_) van twee verzamelingen. Dat doe je met behulp van een [_block_](http://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL#Block_statements)-statement:
 
 ```
 ( 
@@ -35,7 +35,7 @@ area["name"="Groningen"]["admin_level"="10"] -> .g;
 out;
 ```
 
-Hieronder een voorbeeld van een zoekopdracht waarin de café's in de stad Groningen en Leeuwarden worden opgevraagd.
+Hieronder een voorbeeld van een zoekopdracht waarin de cafés in de stad Groningen en Leeuwarden worden opgevraagd.
 
 ```
 area["name"="Groningen"]["admin_level"="10"] -> .g;
@@ -47,7 +47,7 @@ area["name"="Leeuwarden"]["admin_level"="10"] -> .l;
 out;
 ```
 
-Tenslotte nog een voorbeeld waarin gebruik wordt gemaakt van de standaard set voor het opvragen van café's en restaurants in Groningen met een [```opening_hours```](http://wiki.openstreetmap.org/wiki/Key:opening_hours) tag.
+Tenslotte nog een voorbeeld waarin gebruik wordt gemaakt van de standaard set voor het opvragen van cafés en restaurants in Groningen met een [```opening_hours```](http://wiki.openstreetmap.org/wiki/Key:opening_hours) tag.
 
 ```
 area["name"="Groningen"]["admin_level"="10"] -> .g;
@@ -63,7 +63,7 @@ Als je de zesde regel vervangt door ```node[opening_hours];``` krijg je waarschi
 
 ## 4.3 Eén zoekopdracht voor nodes, ways en relations
 Tot nu toe hebben we alleen nodes opgevraagd, maar er zijn meer soorten objecten. Een café kan bijvoorbeeld ook zijn in OpenStreetMap zijn opgenomen als way of relation.  
-Om zeker te weten dat je alle café's in Groningen opvraagt, moet je dus ook ways en relations meenemen.
+Om zeker te weten dat je alle cafés in Groningen opvraagt, moet je dus ook ways en relations meenemen.
 
 ```
 area["name"="Groningen"]["admin_level"="10"] -> .g;
@@ -75,7 +75,7 @@ area["name"="Groningen"]["admin_level"="10"] -> .g;
 out center;
 ```
 
-Aan de ```out``` regel is de parameter ```center``` toegevoegd, zodat je voor alle café's één punt terug krijgt. De parameter ```center``` zorgt er voor dat de zoekopdracht voor ways en relations het middelpunt van de bounding box teruggeeft.
+Aan de ```out``` regel is de parameter ```center``` toegevoegd, zodat je voor alle cafés één punt terug krijgt. De parameter ```center``` zorgt er voor dat de zoekopdracht voor ways en relations het middelpunt van de bounding box teruggeeft.
 
 Als je inzoomt op het centrum van Groningen zie je dat café 'Goudkantoor' aan het Waagplein als enige café geen node is, maar een way.
 

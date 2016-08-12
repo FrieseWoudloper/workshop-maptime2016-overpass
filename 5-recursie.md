@@ -10,6 +10,7 @@ out;
 
 Je krijgt de volgende melding:  
 ```This query returned no nodes. In OSM, only nodes contain coordinates. For example, a way cannot be displayed without its nodes.```  
+
 Kies voor de optie ```Gegevens weergeven```.  
 
 Het resultaat van de zoekopdracht wordt nu getoond in het tabblad _Gegevens_, want zonder coördinaten kan er immers niets op de kaart worden weergegeven. In onderstaand screenshot zie je dat een way slechts een lijst is met verwijzingen naar nodes. 
@@ -39,7 +40,7 @@ out;
 
 De zoekopdracht retourneert alle ways die voldoen aan de filtercriteria plus alle onderliggende nodes. In het tabblad _Kaart_ kun je rechtsonder checken hoeveel en wat voor soort elementen de zoekopdracht terug geeft.  
 
-![resultaten recurse down binnen block](images/resultaten-recurse-down-binnen-block.png) 
+![resultaten recurse down binnen block](images/resultaten-recurse-down-binnen-block.png =500x) 
 
 Als je de ronde haken weg laat, krijg je alleen de onderliggende nodes retour.  
 
@@ -52,9 +53,9 @@ out;
 
 Het aantal wegdelen in het zoekresultaat is nu 0.  
 
-![resultaten recurse down zonder block](images/resultaten-recurse-down-zonder-block.png)   
+![resultaten recurse down zonder block](images/resultaten-recurse-down-zonder-block.png =500x)   
 
-Op dezelfde manier kun je ook de ways en nodes opvragen van lijnen. In de volgende zoekopdracht worden hoogspanningslijnen opgevraagd die door de stad Groningen lopen.
+Net als bij vlakken kun je ook de ways en nodes opvragen van lijnen. In de volgende zoekopdracht worden hoogspanningslijnen opgevraagd die door de stad Groningen lopen.
 
 ```
 area["name"="Groningen"]["admin_level"="10"];
