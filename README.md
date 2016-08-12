@@ -26,9 +26,14 @@ Voor het samenstellen van de workshop heb ik dankbaar gebruik gemaakt van het we
 &nbsp;&nbsp;5.1 Recurse down  
 &nbsp;&nbsp;5.2 Recurse up  
 
+[6. Settings](6-settings.md)  
+&nbsp;&nbsp;6.1 `timeout`  
+&nbsp;&nbsp;6.2 `out`  
+&nbsp;&nbsp;6.3 `diff`  
+
 [7. Bonusmateriaal](7-bonusmateriaal.md)  
 &nbsp;&nbsp;7.1 GeoJSON-exportbestand  
 &nbsp;&nbsp;7.2 QuickOSM plugin voor QGIS  
-&nbsp;&nbsp;7.3 Leaflet  
+&nbsp;&nbsp;7.3 osmtogeojson en Leaflet  
 &nbsp;&nbsp;7.4 Zoeken vanaf de command line  
 
