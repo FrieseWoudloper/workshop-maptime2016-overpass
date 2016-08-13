@@ -29,7 +29,7 @@ out;
 
 ```::"id"``` is een speciaal veld en bevat het OpenStreetMap object id.
 
-## ```diff``` en ```adiff```
+## ```diff```
 
 Het is mogelijk om wijzigingen in bepaalde periode op te vragen door een ```diff``` setting op te geven. In het resultaat van onderstaande zoekopdracht kun je zien dat studenten en medewerkers van de [Geodienst](http://www.rug.nl/society-business/centre-for-information-technology/research/services/gis/) van de Rijksuniversiteit Groningen de afgelopen tijd druk bezig zijn geweest met het bijwerken van de Groninger binnenstad in OpenStreetMap.
 
@@ -37,9 +37,13 @@ Het is mogelijk om wijzigingen in bepaalde periode op te vragen door een ```diff
 [diff:"2016-06-01T00:00:00Z","2016-07-31T24:00:00Z"];
 area["name"="Groningen"]["admin_level"="10"];
 node["shop"](area);
-out;
+out meta;
 ```
 
-Als je het zoekresultaat bekijkt in het tabblad _Gegevens_ kun je precies zien welke winkels zijn aangemaakt, gewijzigd of verwijderd in juni en juli van dit jaar.  
+Als je het zoekresultaat bekijkt in het tabblad _Gegevens_ kun je precies zien welke winkels zijn aangemaakt, gewijzigd of verwijderd in juni en juli van dit jaar.   
+Dankzij de parameter ```meta``` in de laatste regel kun je in het zoekesultaat ook zien welke gebruiker de mutatie heeft doorgevoerd en wanneer dat was.   
+
+Opgave:
+Als je een OpenStreetMap account hebt, vraag dan alle mutaties op die je in het afgelopen jaar hebt doorgevoerd. Maak daarvoor gebruik van een [user filter](http://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL#By_user_.28user.2C_uid.29).
 
 [Volgende](7-bonusmateriaal.md)

@@ -1,5 +1,23 @@
-## GeoJSON-exportbestand
-Het is mogelijk om in Overpass Turbo het zoekresultaat te exporteren naar GeoJSON. Kies in het menu voor _Exporteren_&nbsp;-&nbsp;_Data_&nbsp;-&nbsp;_as GeoJSON_.  
+## MapCSS 
+Je kunt je eigen opmaak toevoegen aan het zoekresultaat in Overpass Turbo met behulp van _MapCSS_. In onderstaand voorbeeld worden cafés als blauwe en restaurants als groene cirkels weergegeven.
+```
+area["name"="Groningen"]["admin_level"="10"];
+node["amenity"~"^cafe|restaurant$"](area);
+out;
+
+{{style:
+  node { symbol-size: 8; }
+  node["amenity"="cafe"] { color: blue; fill-color: blue; }
+  node["amenity"="restaurant"] { color: green; fill-color: green; }
+}}
+```
+Lees deze [wiki-pagina](http://wiki.openstreetmap.org/wiki/Overpass_turbo/MapCSS) voor meer informatie over MapCSS.
+
+## Kaart exporteren als PNG
+Als je een kaartje van het zoekresultaat nodig hebt, kies dan in het menu voor _Exporteren_&nbsp;-&nbsp;_Kaart_&nbsp;-&nbsp;_as png image_. 
+
+## Ruwe data exporteren als GeoJSON
+Het is mogelijk om in Overpass Turbo het zoekresultaat te exporteren naar GeoJSON. Kies in het menu voor _Exporteren_&nbsp;-&nbsp;_Data_&nbsp;-&nbsp;_as geoJSON_.  
 Het GeoJSON bestand kun je vervolgens bijvoorbeeld in QGIS of op [www.geojson.io](http://www.geojson.io) bekijken.
 
 ## QuickOSM plugin voor QGIS
