@@ -84,8 +84,9 @@ Als je inzoomt op het centrum van Groningen zie je dat café 'Goudkantoor' aan h
 ![Café 'Goudkantoor' als way ingetekend](images/cafe-als-way.png)
 
 Oefening:  
-Natuurijsbanen zijn getagt als [```"leisure"="ice_rink"```](http://wiki.openstreetmap.org/wiki/Tag:leisure%3Dice_rink) en ```"seasonal"="yes"```. Ze zijn ingekend als node, way of relation. Maak een zoekopdracht voor alle natuurijsbanen in Nederland (```"name"="Nederland"``` en ```"admin_level"="2"```). Zorg ervoor dat je voor iedere ijsbaan één punt terug krijgt.  
-Bekijk de legenda van Overpass Turbo.
+Natuurijsbanen zijn getagt als [`"leisure"="ice_rink"`](http://wiki.openstreetmap.org/wiki/Tag:leisure%3Dice_rink) en `"seasonal"="yes"`. Ze zijn ingekend als node, way of relation. Maak een zoekopdracht voor alle natuurijsbanen in Nederland (`"name"="Nederland"` en `"admin_level"="2"`). Zorg ervoor dat je voor iedere ijsbaan één punt terug krijgt.  
+Bekijk de legenda van Overpass Turbo. Je vindt de legenda in het menu onder de optie _Hulp_.  
+
 ![legenda](images/legenda.png)  
 
 IJsbanen ingetekend als nodes worden weergegeven als gele cirkels met een blauwe omtrek. IJsbanen ingetekend als ways (vlakken) als rode cirkels met een blauwe omtrek. IJsbanen ingetekend als relations als rode cirkels met een rode omtrek.  
