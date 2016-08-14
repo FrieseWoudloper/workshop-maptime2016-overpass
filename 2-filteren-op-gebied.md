@@ -29,7 +29,7 @@ Let op: `{{bbox}}` is een [Turbo Overpass macro](http://wiki.openstreetmap.org/w
 
 
 ## 2.3 `area` filter
-Als je op zoek bent naar brievenbussen in een stad of gemeente, krijg je met een bouding box vaak meer gegevens terug dan je nodig hebt. Eigenlijk kun je beter filteren op stads- of gemeentegrens. Dat kan met een `area` filter. [`area`](http://wiki.openstreetmap.org/wiki/Overpass_API/Areas) is een extra gegevenstype naast node, way en relation, dat alleen bestaat binnen de Overpass API. Overpass API kan op verzoek een `area` berekenen, waarna het gebruikt kan worden in een zoekopdracht. 
+Als je op zoek bent naar brievenbussen in een stad of gemeente, krijg je met een bouding box vaak meer gegevens terug dan je nodig hebt. Eigenlijk kun je beter filteren op stads- of gemeentegrens. Dat kan met een []`area`](http://wiki.openstreetmap.org/wiki/Overpass_API/Areas) filter. `area` is een extra gegevenstype naast node, way en relation, dat alleen binnen Overpass API bestaat. Overpass API kan op verzoek een `area` berekenen, waarna het gebruikt kan worden in een zoekopdracht. 
 
 ```
 area["name"="Groningen"];
@@ -52,7 +52,7 @@ Je ziet nu dat het `area`-filter een combinatie van vier gebieden oplevert:
 * de _stad_ Groningen.
 
 De query filtert dus op een veel groter gebied dan de stad Groningen!
-Met behulp van [```admin_level```](http://wiki.openstreetmap.org/wiki/Template:Admin_level_11) kun je aangeven dat je alleen geïnteresseerd bent in de stad Groningen.
+Met behulp van [`admin_level`](http://wiki.openstreetmap.org/wiki/Template:Admin_level_11) kun je aangeven dat je alleen geïnteresseerd bent in de stad Groningen. Door te filteren op `"admin_level"="10"` beperk je de zoekopdracht tot _woonplaatsen_.
 
 ```
 area["name"="Groningen"]["admin_level"="10"];
