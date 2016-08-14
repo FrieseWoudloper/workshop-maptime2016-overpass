@@ -79,7 +79,7 @@ out center;
 
 Aan de `out` actie op de laatste regel is de parameter `center` toegevoegd, zodat je voor alle cafés één punt terug krijgt. De parameter `center` zorgt er voor dat de zoekopdracht voor ways en relations het middelpunt van de bounding box retourneert.
 
-Als je inzoomt op het centrum van Groningen zie je dat café 'Goudkantoor' aan het Waagplein als enige café geen node is, maar een way.
+Als je inzoomt op het centrum van Groningen zie je dat café 'Goudkantoor' aan het Waagplein geen node is, maar een way.
 
 ![Café 'Goudkantoor' als way ingetekend](images/cafe-als-way.png)
 

@@ -64,7 +64,7 @@ out;
 
 ![Restaurants met een getal van twee cijfers in de naam](images/restaurant-met-getal-in-naam.png)
 
-Je kunt snel controleren of er cafés zijn zonder ```name```-tag.
+Je kunt snel controleren of er cafés zijn zonder `name`-tag.
 
 ```
 area["name"="Groningen"]["admin_level"="10"];
