@@ -11,7 +11,7 @@ out;
 Wanneer je binnen één zoekopdracht meerdere malen aan dezelfde verzameling gegevens wilt refereren, kan het handig zijn om met sets te werken.
 
 ## 4.2 Vereniging
-Hoe pak je het aan als je een lijst wilt van alle cafés plus [restaurants](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Drestaurant]) in een gebied? Dan vraag je om een vereniging (of _union_) van twee verzamelingen. Dat doe je met behulp van een [_block_](http://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL#Block_statements)-statement:
+Hoe pak je het aan als je een lijst wilt van alle cafés plus [restaurants](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Drestaurant]) in een gebied? Dan vraag je om een vereniging (of _union_) van twee verzamelingen. Dat doe je met behulp van een [block](http://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL#Block_statements)-statement:
 
 ```
 ( 
@@ -23,7 +23,7 @@ Hoe pak je het aan als je een lijst wilt van alle cafés plus [restaurants](http
 out;
 ```
 
-De herhaling van het ```area``` filter ziet er lelijk uit, maar is noodzakelijk. Probeer het maar eens uit.  
+De herhaling van het `area` filter ziet er lelijk uit, maar is noodzakelijk. Probeer het maar eens uit.  
 Om het overzichtelijk te houden, kun je in dit geval beter een set definiëren.
 
 ```
@@ -59,11 +59,13 @@ node._["opening_hours"];
 out;
 ```
 
-Als je de zesde regel vervangt door ```node[opening_hours];``` krijg je waarschijnlijk een time-out. Je bevraagt dan namelijk de hele OpenStreetMap database in plaats van de deelverzameling die in de standaard set is opgeslagen.
+Als je de laatste regel vervangt door ```node[opening_hours];``` krijg je waarschijnlijk een time-out. Je bevraagt dan namelijk de hele OpenStreetMap database in plaats van de deelverzameling die in de standaard set is opgeslagen!
+
+![Query timed out](images/query-timed-out.png)
 
 ## 4.3 Eén zoekopdracht voor nodes, ways en relations
-Tot nu toe hebben we alleen nodes opgevraagd, maar er zijn meer soorten objecten. Een café kan bijvoorbeeld ook zijn in OpenStreetMap zijn opgenomen als way of relation.  
-Om zeker te weten dat je alle cafés in Groningen opvraagt, moet je dus ook ways en relations meenemen.
+Tot nu toe hebben we alleen nodes opgevraagd, maar er zijn meer soorten objecten. Een café kan bijvoorbeeld ook in OpenStreetMap zijn vastgelegd als way of relation.  
+Om zeker te weten dat je alle cafés in Groningen opvraagt, moet je dus ook ways en relations opnemen in je zoekopdracht.
 
 ```
 area["name"="Groningen"]["admin_level"="10"] -> .g;
@@ -75,14 +77,16 @@ area["name"="Groningen"]["admin_level"="10"] -> .g;
 out center;
 ```
 
-Aan de ```out``` regel is de parameter ```center``` toegevoegd, zodat je voor alle cafés één punt terug krijgt. De parameter ```center``` zorgt er voor dat de zoekopdracht voor ways en relations het middelpunt van de bounding box teruggeeft.
+Aan de `out` actie op de laatste regel is de parameter `center` toegevoegd, zodat je voor alle cafés één punt terug krijgt. De parameter `center` zorgt er voor dat de zoekopdracht voor ways en relations het middelpunt van de bounding box retourneert.
 
 Als je inzoomt op het centrum van Groningen zie je dat café 'Goudkantoor' aan het Waagplein als enige café geen node is, maar een way.
+
+![Café 'Goudkantoor' als way ingetekend](images/cafe-als-way.png)
 
 Oefening:  
 Natuurijsbanen zijn getagt als [```"leisure"="ice_rink"```](http://wiki.openstreetmap.org/wiki/Tag:leisure%3Dice_rink) en ```"seasonal"="yes"```. Ze zijn ingekend als node, way of relation. Maak een zoekopdracht voor alle natuurijsbanen in Nederland (```"name"="Nederland"``` en ```"admin_level"="2"```). Zorg ervoor dat je voor iedere ijsbaan één punt terug krijgt.  
 Bekijk de legenda van Overpass Turbo.
-![legenda](images/legenda.png =600x)  
+![legenda](images/legenda.png)  
 
 IJsbanen ingetekend als nodes worden weergegeven als gele cirkels met een blauwe omtrek. IJsbanen ingetekend als ways (vlakken) als rode cirkels met een blauwe omtrek. IJsbanen ingetekend als relations als rode cirkels met een rode omtrek.  
 
