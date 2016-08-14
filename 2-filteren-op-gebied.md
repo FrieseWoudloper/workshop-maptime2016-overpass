@@ -1,15 +1,15 @@
 ## 2.1 Bounding box filter
 We beginnen met een simpel voorbeeld: het opvragen van alle nodes die getagt zijn als brievenbus in de stad Groningen en directe omgeving.
-Open [Overpass Turbo](http://overpass-turbo.eu/), voer onderstaande code uit en zoom in op Groningen.
+Open [Overpass Turbo](http://overpass-turbo.eu/), voer onderstaande code uit en zoom in op Groningen.  
 
 ```
-node["amenity"="post_box"];
+node["amenity"="post_box"](53.178699, 6.46275, 53.2649, 6.66687);
 out;
 ```
 
-Bij het opstellen van een query moet je met het volgende rekening houden:
-* Een query bestaat uit regels die na elkaar worden uitgevoerd.
-* Regels eindigen met een puntkomma.
+Bij het opstellen van een zoekopdracht moet je met het volgende rekening houden:
+* Een zoekopdracht bestaat uit acties die na elkaar worden uitgevoerd.
+* Acties eindigen met een puntkomma.
 * Een filter op basis van een tag definieer je tussen blokhaken.
 * Een filter op basis van locatie definieer je tussen ronde haken.
 * Een bounding box definieer je als volgt: `(min lat, min lon, max lat, max lon)`
