@@ -7,6 +7,8 @@ node["amenity"="post_box"](53.178699, 6.46275, 53.2649, 6.66687);
 out;
 ```
 
+![Brievenbussen in Groningen](images/brievenbussen-in-groningen.png)
+
 Bij het opstellen van een zoekopdracht moet je met het volgende rekening houden:
 * Een zoekopdracht bestaat uit acties die na elkaar worden uitgevoerd.
 * Acties eindigen met een puntkomma.
@@ -44,6 +46,8 @@ Voer onderstaande code uit en switch in Overpass Turbo naar het tabblad _Gegeven
 area["name"="Groningen"];
 out;
 ```
+
+![Areas met de naam Groningen](images/areas-met-naam-groningen.png)
 
 Je ziet nu dat het `area`-filter een combinatie van vier gebieden oplevert: 
 * [een vakantiehuisje op Ameland](http://www.openstreetmap.org/way/267920141#map=16/53.4567/5.7923) met de naam 'Groningen',
