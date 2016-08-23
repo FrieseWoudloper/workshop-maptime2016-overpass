@@ -31,7 +31,7 @@ Let op: `{{bbox}}` is een [Turbo Overpass macro](http://wiki.openstreetmap.org/w
 
 
 ## 2.3 `area` filter
-Als je op zoek bent naar brievenbussen in een stad of gemeente, krijg je met een bouding box vaak meer gegevens terug dan je nodig hebt. Eigenlijk kun je beter filteren op stads- of gemeentegrens. Dat kan met een []`area`](http://wiki.openstreetmap.org/wiki/Overpass_API/Areas) filter. `area` is een extra gegevenstype naast node, way en relation, dat alleen binnen Overpass API bestaat. Overpass API kan op verzoek een `area` berekenen, waarna het gebruikt kan worden in een zoekopdracht. 
+Als je op zoek bent naar brievenbussen in een stad of gemeente, krijg je met een bouding box vaak meer gegevens terug dan je nodig hebt. Eigenlijk kun je beter filteren op stads- of gemeentegrens. Dat kan met een [`area`](http://wiki.openstreetmap.org/wiki/Overpass_API/Areas) filter. `area` is een extra gegevenstype naast node, way en relation, dat alleen binnen Overpass API bestaat. Overpass API kan op verzoek een `area` berekenen, waarna het gebruikt kan worden in een zoekopdracht. 
 
 ```
 area["name"="Groningen"];
