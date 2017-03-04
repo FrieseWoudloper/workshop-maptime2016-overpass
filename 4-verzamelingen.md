@@ -72,7 +72,7 @@ area["name"="Groningen"]["admin_level"="10"] -> .g;
 ( 
   node["amenity"="cafe"](area.g);
   way["amenity"="cafe"](area.g);
-  relation["relation"="cafe"](area.g);
+  relation["amenity"="cafe"](area.g);
 );
 out center;
 ```
